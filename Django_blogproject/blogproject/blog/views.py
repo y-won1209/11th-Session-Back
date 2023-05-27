@@ -1,8 +1,7 @@
-from django.shortcuts import redirect, render, get_object_or_404
+from django.shortcuts import render, redirect, get_object_or_404
 from .models import Blog, HashTag
 from django.utils import timezone
 from .forms import BlogForm,CommentForm
-# Create your views here.
 
 def home(request):
     blogs=Blog.objects 
